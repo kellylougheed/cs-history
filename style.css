@@ -1,0 +1,30 @@
+body {
+	background: url(images/spiration-light.png);
+	font-family: 'Montserrat', arial;
+}
+
+.parent {
+	padding: 25px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+}
+
+.brand-logo {
+	margin: 0 25px;
+}
+
+div.card-content.white-text a {
+	transition: all .5s;
+}
+
+div.card-content.white-text a:hover {
+	color: #ffab40;
+}
+
+@media (max-width: 750px) {
+	.parent {
+		grid-template-columns: 1fr;
+	}
+}
